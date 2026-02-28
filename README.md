@@ -1,5 +1,22 @@
 # UP10 — Actividades evaluables: Miniproyecto TechShop
 
+En este miniproyecto vas a construir **TechShop**, una tienda de tecnología ficticia, usando JavaScript puro. La idea es sencilla: una tienda tiene productos con nombre, precio y disponibilidad; un cliente tiene saldo; y la caja registradora calcula subtotales, aplica IVA y gestiona descuentos por volumen de compra.
+
+El proyecto está dividido en **6 fases progresivas**. Cada fase introduce un concepto nuevo y construye sobre lo que ya tienes:
+
+| Fase | Concepto | Qué harás |
+| --- | --- | --- |
+| 1 | Variables y tipos | Declarar los productos y el cliente de la tienda |
+| 2 | Operadores | Calcular totales, IVA y cambio |
+| 3 | Condicionales | Comprobar saldo, disponibilidad y aplicar descuentos |
+| 4 | Bucles | Recorrer el carrito e imprimir un ticket |
+| 5 | Funciones | Refactorizar la lógica en funciones reutilizables |
+| 6 | DOM | Llevar la tienda al navegador con una interfaz interactiva |
+
+Las fases 1-5 se ejecutan en la terminal con Node.js. La fase 6 se abre en el navegador. En ambos casos verás resultados reales inmediatamente, lo que te permitirá comprobar tu código en cada paso.
+
+---
+
 **Archivos que debes editar:**
 
 - Fases 1-5 → `js/UP10-actividades.js`
