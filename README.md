@@ -176,3 +176,17 @@ Teclado mecánico x2 — 159,98 €
 ```
 
 *Pista: en la función `añadirAlCarrito()`, busca primero si el producto ya está en `itemsCarrito` con `findIndex()`. Las instrucciones detalladas están en el comentario del ejercicio dentro del archivo.*
+
+---
+
+## Entrega
+
+Una vez completadas las fases que se indiquen, comprime **toda la carpeta del proyecto** en un archivo `.zip` y súbelo a la tarea correspondiente de Aules.
+
+Antes de comprimir, comprueba que:
+
+- `node js/UP10-actividades.js` se ejecuta sin errores en la terminal.
+- `main.html` abre correctamente en el navegador y el carrito funciona.
+- Los ejercicios que has completado tienen código escrito (no están en blanco ni comentados).
+
+El nombre del archivo debe seguir el formato: `APELLIDOS_NOMBRE_TechShop.zip`
