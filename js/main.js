@@ -48,23 +48,23 @@
    a modificar desde JavaScript.
 
    Métodos:
-     document.getElementById('id')       → un único elemento
-     document.querySelectorAll('.clase')  → colección de elementos
+     document.getElementById("id")       → un único elemento
+     document.querySelectorAll(".clase")  → colección de elementos
    ============================================================ */
 
 // Lista donde aparecerán los artículos añadidos al carrito
-const listaCarrito = document.getElementById('lista-carrito');
+const listaCarrito = document.getElementById("lista-carrito");
 
 // Spans del resumen de precios
-const spanSubtotal = document.getElementById('subtotal');
-const spanIVA      = document.getElementById('iva');
-const spanTotal    = document.getElementById('total');
+const spanSubtotal = document.getElementById("subtotal");
+const spanIVA      = document.getElementById("iva");
+const spanTotal    = document.getElementById("total");
 
 // Botón para vaciar todo el carrito
-const btnVaciar = document.getElementById('btn-vaciar');
+const btnVaciar = document.getElementById("btn-vaciar");
 
 // Todos los botones "Añadir al carrito" del catálogo
-const botonesAñadir = document.querySelectorAll('.btn-añadir');
+const botonesAñadir = document.querySelectorAll(".btn-añadir");
 
 // TODO 1.1 — Selecciona la sección con id "carrito-section"
 //            y guárdala en una variable llamada carritoSection.
@@ -108,9 +108,9 @@ function actualizarResumen() {
     let iva            = total - subtotalConDto;
 
     // Actualizamos el texto de los <span> en el HTML
-    spanSubtotal.textContent = subtotalConDto.toFixed(2) + ' €';
-    spanIVA.textContent      = iva.toFixed(2)            + ' €';
-    spanTotal.textContent    = total.toFixed(2)          + ' €';
+    spanSubtotal.textContent = subtotalConDto.toFixed(2) + " €";
+    spanIVA.textContent      = iva.toFixed(2)            + " €";
+    spanTotal.textContent    = total.toFixed(2)          + " €";
 }
 
 
@@ -131,17 +131,17 @@ function añadirAlCarrito(nombre, precio) {
     itemsCarrito.push({ nombre: nombre, precio: precio });
 
     // --- b) Crear el <li> ---
-    const li = document.createElement('li');
+    const li = document.createElement("li");
 
-    const textoSpan = document.createElement('span');
+    const textoSpan = document.createElement("span");
     textoSpan.textContent = `${nombre} — ${precio.toFixed(2)} €`;
 
     // --- c) Botón eliminar ---
-    const btnEliminar = document.createElement('button');
-    btnEliminar.textContent = '✕';
-    btnEliminar.classList.add('btn-eliminar');
+    const btnEliminar = document.createElement("button");
+    btnEliminar.textContent = "✕";
+    btnEliminar.classList.add("btn-eliminar");
 
-    btnEliminar.addEventListener('click', function () {
+    btnEliminar.addEventListener("click", function () {
         // Buscamos el índice del artículo en el array
         let indice = itemsCarrito.findIndex(function (item) {
             return item.nombre === nombre && item.precio === precio;
@@ -167,13 +167,13 @@ function añadirAlCarrito(nombre, precio) {
    PASO 5 — Conectar los botones del catálogo
    ============================================================
    Recorremos los botones ".btn-añadir" con un for y
-   añadimos un evento 'click' a cada uno.
+   añadimos un evento "click" a cada uno.
    El nombre y el precio están en los atributos data-* del
    div padre (.producto), que leemos con dataset.
    ============================================================ */
 
 for (let i = 0; i < botonesAñadir.length; i++) {
-    botonesAñadir[i].addEventListener('click', function () {
+    botonesAñadir[i].addEventListener("click", function () {
         let divProducto = botonesAñadir[i].parentElement;
         let nombre = divProducto.dataset.nombre;
         let precio  = parseFloat(divProducto.dataset.precio);
@@ -187,9 +187,9 @@ for (let i = 0; i < botonesAñadir.length; i++) {
    PASO 6 — Botón "Vaciar carrito"
    ============================================================ */
 
-btnVaciar.addEventListener('click', function () {
+btnVaciar.addEventListener("click", function () {
     itemsCarrito = [];
-    listaCarrito.innerHTML = '';
+    listaCarrito.innerHTML = "";
     actualizarResumen();
 });
 
