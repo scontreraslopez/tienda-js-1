@@ -70,6 +70,10 @@ const botonesAñadir = document.querySelectorAll(".btn-añadir");
 //            y guárdala en una variable llamada carritoSection.
 // const carritoSection = ...
 
+// EJ. 6.1 — Selecciona el <h2> del carrito para poder actualizar su texto.
+//            Úsala dentro de actualizarResumen().
+// const h2Carrito = document.querySelector(...);
+
 
 /* ============================================================
    PASO 2 — Array de datos del carrito
@@ -111,6 +115,12 @@ function actualizarResumen() {
     spanSubtotal.textContent = subtotalConDto.toFixed(2) + " €";
     spanIVA.textContent      = iva.toFixed(2)            + " €";
     spanTotal.textContent    = total.toFixed(2)          + " €";
+
+    // TODO EJ. 6.1 — Completa primero la selección de h2Carrito (busca
+    //                "EJ. 6.1" en el Paso 1), luego escribe aquí la lógica:
+
+    // TODO EJ. 6.2 — Muestra u oculta el mensaje "El carrito está vacío.":
+    // Escribe aquí:
 }
 
 
@@ -206,12 +216,10 @@ btnVaciar.addEventListener("click", function () {
      - N artículos → "Carrito (N artículos)"
 
    Pistas:
-     - Selecciona el <h2> dentro de #carrito-section.
-     - Actualiza su textContent dentro de actualizarResumen().
+     - Declara h2Carrito arriba, en el Paso 1 (busca "EJ. 6.1").
+     - Actualiza su textContent dentro de actualizarResumen() (busca "TODO EJ. 6.1").
      - Usa itemsCarrito.length para saber cuántos hay.
    ------------------------------------------------------- */
-
-// Escribe aquí:
 
 
 /* -------------------------------------------------------
@@ -224,9 +232,8 @@ btnVaciar.addEventListener("click", function () {
      - Comprueba itemsCarrito.length === 0 en actualizarResumen().
      - Puedes añadir un <li class="carrito-vacio"> cuando esté
        vacío y eliminarlo cuando se añada el primer artículo.
+     - Escribe la lógica dentro de actualizarResumen() (busca "TODO EJ. 6.2").
    ------------------------------------------------------- */
-
-// Escribe aquí:
 
 
 /* -------------------------------------------------------
