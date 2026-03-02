@@ -165,6 +165,9 @@ Una vez pegadas, abre `main.html` en el navegador: si el carrito muestra `0,00 �
 
 El archivo `js/main.js` incluye el código base funcionando (pasos 1-6): puedes añadir productos al carrito, ver el total actualizado y vaciar el carrito. Tu tarea es completar los tres ejercicios al final del archivo.
 
+> [!NOTE]
+> Para no obviar ninguna parte, es importarte que leas todo el código y no intentes saltar directamente a los ejercicios. El código ya tiene comentarios que te guiarán en cada paso.
+
 **Ejercicio 6.1** — Muestra el número de artículos en el título de la sección "Carrito":
 
 - 0 artículos → `Carrito`
@@ -175,7 +178,7 @@ El contador debe actualizarse cada vez que se añade o elimina un artículo. *Pi
 
 **Ejercicio 6.2** — Cuando el carrito está vacío, muestra el texto "El carrito está vacío." dentro de la lista. Cuando hay artículos, ese texto debe desaparecer. *Pista: comprueba `itemsCarrito.length` dentro de `actualizarResumen()`.*
 
-**Ejercicio 6.3** *(desafío)* — Evita que el mismo producto se pueda añadir más de una vez al carrito. En lugar de crear una línea nueva, incrementa la cantidad de la línea existente y actualiza su texto:
+**Ejercicio 6.3** — Evita que el mismo producto se pueda añadir más de una vez al carrito. En lugar de crear una línea nueva, incrementa la cantidad de la línea existente y actualiza su texto:
 
 ```text
 Teclado mecánico x2 — 159,98 €

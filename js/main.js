@@ -66,13 +66,18 @@ const btnVaciar = document.getElementById("btn-vaciar");
 // Todos los botones "Añadir al carrito" del catálogo
 const botonesAñadir = document.querySelectorAll(".btn-añadir");
 
-// TODO 1.1 — Selecciona la sección con id "carrito-section"
-//            y guárdala en una variable llamada carritoSection.
-// const carritoSection = ...
 
-// EJ. 6.1 — Selecciona el <h2> del carrito para poder actualizar su texto.
-//            Úsala dentro de actualizarResumen().
-// const h2Carrito = document.querySelector(...);
+// TODO EJ 6.1 - Step 1. En este punto vamos a seleccionar un elemento del DOM para luego actualizar su texto con el número de artículos en el carrito (EJ. 6.1)
+// Tienes dos posibles aproximaciones para seleccionar el <h2> del carrito:
+// 1) Seleccionar el <h2> directamente con querySelector() usando su clase o su posición relativa a otros elementos.
+// 2) Seleccionar la sección del carrito (con id "carrito-section") y luego usar querySelector() sobre esa sección para encontrar el <h2> dentro de ella.
+// Elige la que te resulte más cómoda, o haz ambas para practicar. Luego guarda la referencia en una variable llamada h2Carrito.
+
+/* --- INICIO BLOQUE DE RESPUESTA --- */
+
+
+
+/* --- FIN BLOQUE DE RESPUESTA --- */
 
 
 /* ============================================================
@@ -121,8 +126,9 @@ function actualizarResumen() {
 
     // TODO EJ. 6.2 — Muestra u oculta el mensaje "El carrito está vacío.":
     // Escribe aquí:
-}
 
+
+}
 
 /* ============================================================
    PASO 4 — Función añadirAlCarrito(nombre, precio)
@@ -216,8 +222,8 @@ btnVaciar.addEventListener("click", function () {
      - N artículos → "Carrito (N artículos)"
 
    Pistas:
-     - Declara h2Carrito arriba, en el Paso 1 (busca "EJ. 6.1").
-     - Actualiza su textContent dentro de actualizarResumen() (busca "TODO EJ. 6.1").
+     - Declara h2Carrito arriba, en el Paso 1 (busca "TODO EJ. 6.1 - Step 1").
+     - Actualiza su textContent dentro de actualizarResumen() (busca "TODO EJ. 6.1 - Step 2").
      - Usa itemsCarrito.length para saber cuántos hay.
    ------------------------------------------------------- */
 
@@ -225,7 +231,7 @@ btnVaciar.addEventListener("click", function () {
 /* -------------------------------------------------------
    EJERCICIO 6.2
    Si el carrito está vacío, muestra el texto
-   "El carrito está vacío." dentro de la lista.
+   "El carrito está vacío." dentro de la lista lista-carrito.
    En cuanto haya artículos, ese mensaje debe desaparecer.
 
    Pistas:
@@ -237,7 +243,7 @@ btnVaciar.addEventListener("click", function () {
 
 
 /* -------------------------------------------------------
-   EJERCICIO 6.3 (desafío)
+   EJERCICIO 6.3
    Evita duplicados: si el producto ya está en el carrito,
    incrementa la cantidad en vez de añadir una línea nueva.
 
