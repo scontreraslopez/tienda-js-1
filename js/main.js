@@ -243,7 +243,7 @@ btnVaciar.addEventListener("click", function () {
 
 
 /* -------------------------------------------------------
-   EJERCICIO 6.3
+   EJERCICIO 6.3 (ampliación)
    Evita duplicados: si el producto ya está en el carrito,
    incrementa la cantidad en vez de añadir una línea nueva.
 
@@ -261,6 +261,7 @@ btnVaciar.addEventListener("click", function () {
    ------------------------------------------------------- */
 
 // Este ejercicio requiere reescribir añadirAlCarrito().
+// Además de añadir esta lógica, verás que tienes que cambiar cómo se están contando los artículos en el carrito, porque ahora cada objeto del array tendrá una propiedad cantidad. 
 // Cuando estés listo, comenta o borra la función original
 // y escribe la nueva versión aquí abajo.
 

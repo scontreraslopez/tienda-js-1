@@ -178,13 +178,15 @@ El contador debe actualizarse cada vez que se añade o elimina un artículo. *Pi
 
 **Ejercicio 6.2** — Cuando el carrito está vacío, muestra el texto "El carrito está vacío." dentro de la lista. Cuando hay artículos, ese texto debe desaparecer. *Pista: comprueba `itemsCarrito.length` dentro de `actualizarResumen()`.*
 
-**Ejercicio 6.3** — Evita que el mismo producto se pueda añadir más de una vez al carrito. En lugar de crear una línea nueva, incrementa la cantidad de la línea existente y actualiza su texto:
+**Ejercicio 6.3 (ampliación)** — Evita que el mismo producto se pueda añadir más de una vez al carrito. En lugar de crear una línea nueva, incrementa la cantidad de la línea existente y actualiza su texto:
 
 ```text
 Teclado mecánico x2 — 159,98 €
 ```
 
 *Pista: en la función `añadirAlCarrito()`, busca primero si el producto ya está en `itemsCarrito` con `findIndex()`. Las instrucciones detalladas están en el comentario del ejercicio dentro del archivo.*
+
+findIndex se apoya en funciones de orden superior, que no se han visto en esta UP10, pero es un método muy útil para buscar objetos dentro de arrays. Es una buena oportunidad para que lo investigues por tu cuenta si quieres un reto extra. Incluso si te apoyas en la inteligecia artificial, es importante que hagas un esfuerzo por entender cómo funciona porque, aunque lo reforzaremos, es core en javascript y lo vas a usar mucho en el futuro. Por ese motivo lo dejo como ejercicio de ampliación, para que lo intentes por tu cuenta sin que sea obligatorio.
 
 ---
 
