@@ -231,7 +231,7 @@ btnVaciar.addEventListener("click", function () {
 /* -------------------------------------------------------
    EJERCICIO 6.2
    Si el carrito está vacío, muestra el texto
-   "El carrito está vacío." dentro de la lista lista-carrito.
+   "El carrito está vacío." dentro de la lista lista-carrito (ya seleccionada en la variable listaCarrito).
    En cuanto haya artículos, ese mensaje debe desaparecer.
 
    Pistas:
