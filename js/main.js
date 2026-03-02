@@ -263,3 +263,7 @@ btnVaciar.addEventListener("click", function () {
 // Este ejercicio requiere reescribir añadirAlCarrito().
 // Cuando estés listo, comenta o borra la función original
 // y escribe la nueva versión aquí abajo.
+
+// Llamamos a actualizarResumen() al final de la función, igual que antes. 
+// Así se cargará el mensaje de "El carrito está vacío." al principio, y luego se irá actualizando cada vez que añadamos o quitemos algo.
+actualizarResumen();
