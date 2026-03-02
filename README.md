@@ -139,6 +139,12 @@ console.log(encontrarProducto(carrito, "Disco duro"));
 
 *Para esta fase trabaja en `js/main.js`. Abre `main.html` en el navegador para ver los cambios en tiempo real. El scaffold HTML y CSS ya están dados.*
 
+Antes de empezar a trabajar, ábrelo y explora, fíjate como haciendo click metemos productos al carrito. Al pulsar sobre la X podemos eliminar productos del carrito. Pero... los totales no se actualizan. ¡Eso es lo que vamos a arreglar en esta fase!
+
+Es tu oportunidad para que veas como se conecta el código JavaScript con el HTML y el CSS, y cómo se puede manipular la página desde el código. El objetivo es que el carrito funcione completamente: que al añadir productos se actualicen los totales, y que al eliminar productos también se actualicen.
+
+![Screenshot of the starting TechShop project](image.png)
+
 ### Paso previo obligatorio — Porta tus funciones de la Fase 5
 
 Antes de escribir ningún ejercicio, copia las siguientes funciones de `js/UP10-actividades.js` al bloque reservado al inicio de `js/main.js` (está marcado como `/* --- PEGA AQUÍ TUS FUNCIONES --- */`):
